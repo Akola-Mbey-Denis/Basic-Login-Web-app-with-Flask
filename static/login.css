@@ -1,0 +1,109 @@
+*
+{
+    margin:0px;
+    font-family: 'Open Sans', sans-serif;
+}
+body
+{
+    display:flex;
+
+}
+.main-container
+{
+    height:100vh;
+    width:100%;
+    background-color: #f7fafc;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+form
+ {
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     background-color: white;
+     height: 300px;
+    
+    padding-left: 70px;
+    padding-right: 70px;
+
+     
+ }
+.login-form
+{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+   background-color:white;
+  
+ 
+}
+ 
+.login-form input[type="email"],input[type="password"]
+ {
+     display:flex;
+     flex-direction: column;
+     margin-bottom: 23px;
+     align-content: space-around;
+     border-color: none;
+     align-items: center;
+     background-color:#f7fafc;
+     border:#f7fafc;
+     height: 35px;
+   border-color: #f7fafc;
+     border-radius: 3px;
+ 
+    
+ }
+ 
+ .login-form input[type="checkbox"]
+ {
+     display: flex;
+     height: 8px;
+     font-size: 3px;
+     margin-top: 2px;
+     margin-right: 10px;
+ }
+ 
+  #link
+  {
+display:flex;
+flex-direction: row;
+justify-content: center;
+color:#cccccc;
+align-content: space-between;
+font-size:12px;
+ 
+  }
+  #link a
+  {
+      margin-left: 20px;
+text-decoration: none;
+color: #0071bc; 
+font-size:12px;
+    margin-left: 100px;
+ }
+ .login-form p
+ {
+     display: flex;
+     justify-content: center;
+     margin-bottom:23px;
+     color: #0071bc; 
+ }
+ button
+ {
+     color:white;
+     margin-top:23px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+    background-color:#586ada;
+    height: 40px;
+    width:310px;
+    color:white;
+    border:#586ada;
+
+ }

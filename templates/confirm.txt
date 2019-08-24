@@ -1,0 +1,4 @@
+Welcome{{current_user.username}} 
+Thanks for signing up. Please follow this link to activate your account:
+ url_for('admin.login_admin', token=token, _external=True)
+Cheers!

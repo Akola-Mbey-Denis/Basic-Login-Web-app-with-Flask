@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <link rel="stylesheet" type="text/css" href="../static/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto|Roboto+Condensed&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="main-container">
+      
+        <div class="login-form">
+                {% with messages=get_flashed_messages() %}
+                {% if messages %}
+                {{ messages[0]}} Go <a href="{{ url_for('admin.signup_admin')}}">Signup Page</a>
+                {% endif %}
+                {% endwith %}
+                <form method="POST" action="/login">
+                     
+                <p> Welcome</p>
+            <input type="email" name="email" placeholder="email address" required>
+            <input type="hidden"  name="token" value="{{token}}">
+           <input type="password"  name="password" placeholder="password" required>
+           <div id="link">
+                <input type="checkbox" name="remember" value="rmb">Remember me<br>
+                <a href="{{url_for('email.forget_password_post')}}">Forget password?</a>
+           </div>
+           
+           
+            <button class="submit"> Log in</button>
+        
+        </form>
+        </div>
+    </div>
+    
+</body>
+</html>

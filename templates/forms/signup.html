@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/static/signup.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto|Roboto+Condensed&display=swap" rel="stylesheet"> 
+    <title>signup</title>
+</head>
+<body>
+    <div class="main-container">
+        
+        <div class="signup-form">
+            {% with messages=get_flashed_messages() %}
+            {% if messages %}
+            {{ messages[0]}} Go <a href="{{ url_for('admin.login_admin')}}">Login Page</a>
+            {% endif %}
+            {% endwith %}
+<form  action="/signup" method="POST">
+        <p> Welcome</p>
+    <input type="email" placeholder="email address" name="email" required>
+    <input type="username" placeholder="username"  name="username" required>
+    <input type="password" placeholder="password" name="password" required>
+    <button class="submit"> sign up</button>
+
+</form>
+        </div>
+    </div>
+</body>
+</html>

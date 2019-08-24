@@ -1,0 +1,274 @@
+*{
+    margin:0px;
+    font-family: 'Open Sans', sans-serif;
+   
+}
+body
+{
+    height: 100vh;
+    width:100%;
+   
+
+}
+header
+{
+    
+    display:flex;
+    flex-direction: row;
+    height: 8vh;
+    background: white;
+    align-items: center;
+   justify-content: space-around;
+}
+#user
+{
+    display: flex;
+    background-color:orange;
+    border-radius: 50px;
+    font-size:15px;
+    text-align: center;
+    color:white;
+    border-color:orange;
+}
+header img
+{
+    height: 10px;
+    margin-left:-15px;
+    margin-top:15px;
+
+}
+.app-logo button
+{
+    color:white;
+    font-size: 25px;
+    background-color: #4258ff;
+    display: flex;
+    text-align: center;
+    font-style: bold; 
+    margin-left: -300px;
+    width: 40px;
+ 
+    border: #4258ff;
+    border-radius: 5px;
+     
+}
+header nav
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+     margin-right: -320px;
+
+}
+.header-nav ul 
+{
+    display: flex;
+    
+justify-content: space-around;
+}
+.header-nav li
+{
+    display:flex;
+    align-content: flex-end; 
+}
+.header-nav button,p
+{
+margin-right: 20px;
+font-size: 17px;
+
+}
+ #addtask
+{
+    background-color: #4258ff;
+    border-radius: 5px;
+    border-color:  #4258ff;
+    color:white;
+    height:35px;
+
+}
+ 
+.main-container
+{
+    display:flex;
+    background-color: 	#dadcff;
+   
+
+}
+.side-bar
+{
+height:90vh;
+width:12%;
+display:flex;
+background-color:rgb(223,223,223);
+}
+.task-manager
+{
+    display:flex;
+    background-color:rgb(223,223,223);
+    width: 85%;
+}
+/*styles for the task manager*/
+.overview
+{
+    color:#6b6b6b;
+    display:flex;
+    font-size: 15px;
+    margin-left: 1px;
+    margin-top: 50px;
+} 
+.task-log
+{
+    display: flex;
+    flex-direction: column;
+   margin-bottom:10px;
+}
+.task-log li
+{
+    display:flex;
+    margin-bottom: 12px;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.tasks
+{
+    background-color: #1ba1e2;
+display:flex;
+      height: 100px;
+      width:150px;
+      color:white;
+      justify-content:center;
+     align-items: flex-start;
+}
+ 
+.project ul
+{
+    display: flex;
+ 
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: -210px;
+}
+#proj-head
+{
+    display:flex;
+     margin-top: 200px;
+    margin-left:-160px;
+    justify-content: flex-start;
+}
+.project-list li
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 23px;
+    color:white;
+    width:150px;
+    height: 100px;
+    align-items: center;
+   
+    margin-top: 10px;
+}
+#item-1
+{
+    background-color:#1e4985;
+}
+#item-2
+{
+    background-color: #1475e1;
+}
+#item-3
+{
+    background-color:#f0dce5;
+    color: #1475e1;
+}
+.lemon
+{
+    display:flex;
+    margin-top:250px;
+    margin-left:-250px;
+   
+}
+#lemon-head
+{
+    display: flex;
+    margin-top: -230px;
+    align-content: flex-start;
+    margin-left:90px;
+}
+.lemon ul
+{
+display: flex;
+flex-direction: row;
+margin-left:-125px;
+margin-top: -190px; 
+}
+.lemon li
+{
+    height: 100px;
+    display: flex;
+    width:150px;
+ 
+margin-right: 23px;
+}
+#lemon-1
+{
+    background-color:#f0dce5;  
+}
+#lemon-2,#lemon-3
+{
+    background-color: #1475e1;
+}
+/* styles for the side bar*/
+.main-nav
+{
+    display: flex;
+    flex-direction: column;
+ align-content: flex-start;
+ margin-left:-25px;
+ margin-top:40px;
+}
+.main-nav ul
+{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+  
+}
+.main-nav li
+{
+    display: flex;
+    margin-bottom: 10px;
+    color:#6b6b6b;
+    font-size: 12px;
+    align-items:  space-around;
+    justify-content: space-around;
+
+}
+#inner-list
+{
+    display:flex;
+}
+#inner-list ul
+{
+    margin-top: 25px;
+    margin-left:-120px;
+
+}
+.main-nav img
+{
+    height: 15px;
+    margin-right:5px;
+
+}
+#inner-list li
+{
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+#dash-board
+{
+    color:#1475e1;
+}
